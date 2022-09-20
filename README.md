@@ -83,11 +83,14 @@ TC_Planit.rb -nt -n /test_01/
 
 
 **1. What approaches could you used to reduce overall execution time?**
-- Run the tests in headless mode to reduce execution time.
+- Run the tests in headless mode.
 - Break the tests into multiple testpacks and run them in parallel on separate machines (e.g. separate VM's in a cloud service provider such as AWS or Azure).
-- If business logic is performed in the application backend, could we change some of these tests to be API tests rather than browser based.  Or change to back end tests entirely for this business logic.
+- If business logic is performed in the application backend, change some of these tests to be API tests rather than browser based.  Or change to back end tests, such as NUnits, entirely for this business logic.
 
 **3. How will your framework cater for this?**
+- For headless mode, an additional argument can be added to the driver options in the Browser.rb standard_setup method.  This could be made optional.
+- Test categories could be added to each test to enable them to be broken down into separate testpacks.  This can be driven from a Ruby rakefile.
+- The framework could be extended to include the [restclient](https://rubygems.org/gems/restclient) gem to allow simple development of API tests.
 
 **4. Describe when to use a BDD approach to automation and when NOT to use BDD**
 
