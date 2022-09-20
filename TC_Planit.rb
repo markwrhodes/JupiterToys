@@ -61,7 +61,7 @@ class TC_Planit < Minitest::Test
   end 
 
   
-  def test_03_that_will_be_skipped
+  def test_03_product_buy_and_cart_validation
     # 1. From the home page go to shop page
     shop = Shop.new
     shop.goto_shop_page
@@ -83,7 +83,7 @@ class TC_Planit < Minitest::Test
   end
 
 
-  def test_04
+  def test_04_product_buy_and_price_validation
     shop = Shop.new
     shop.goto_shop_page
     shop_stuffed_frog_price = shop.get_shop_item_price('Stuffed Frog')
