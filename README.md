@@ -36,3 +36,43 @@ gem install selenium-webdriver
 gem install minitest
 gem install ffi
 ```
+
+[Selenium-webdriver](https://rubygems.org/gems/selenium-webdriver) implements the W3C WebDriver protocol to automate popular browsers. It aims to mimic the behaviour of a real user as it interacts with the application's HTML. It's primarily intended for web application testing, but any web-based task can automated.  [Minitest](https://rubygems.org/gems/minitest) provides a complete suite of testing facilities.
+
+Next download the ChromeDriver binary for Chrome.  This will be used by selenium-webdriver.
+[Download](https://chromedriver.storage.googleapis.com/index.html) the version that matches your Chrome install.  For example I am on Version 105.0.5195.127 (Official Build) (64-bit) so I downloaded [105.0.5195.19](https://chromedriver.storage.googleapis.com/105.0.5195.19/chromedriver_win32.zip).
+
+I placed the chromedriver.exe in the following location:
+C:\chromedriver\chromedriver.exe
+And added C:\chromedriver\ to my PATH environment variable.
+
+## Usage
+
+Place all of the repository files in the same folder and from the command line run the file TC_Planit.rb to run all tests.
+```bash
+TC_Planit.rb
+```
+
+TC_Planit.rb contains the following four tests:
+- test_01_contact_page_error_validation
+- test_02_contact_page_submission_validation
+- test_03_product_buy_and_cart_validation
+- test_04_product_buy_and_price_validation
+
+You can run a single test by specifying the cmd line argument -n and a regex of the name.  E.g.
+```bash
+TC_Planit.rb -n /test_01/
+```
+
+If you wish the browser to stay open following test excution use the -nt cmd line argument.  E.g.
+```bash
+TC_Planit.rb -nt -n /test_01/
+```
+
+
+
+
+
+
+
+
