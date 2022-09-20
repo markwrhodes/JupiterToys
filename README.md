@@ -69,7 +69,27 @@ If you wish the browser to stay open following test excution use the -nt cmd lin
 TC_Planit.rb -nt -n /test_01/
 ```
 
+## Additional Questions
+**1. What other possible scenario’s would you suggest for testing the Jupiter Toys application?**
+- Testing all navigation links.  E.g. we can get to the shop page from the "Start Shopping" on the home page, the "Shop" link at the top of the page or from the "Shopping" link from the cart.
+- Test that on the contact page can we must provide a valid email address.  Also, do the fields have other sensible validation such as message size.
+- On the shopping cart page we can test removing items from the cart, or updating the quantity.
+- Test emptying the cart.
+- Test the checkout process from the shopping cart.
+- Test that the shopping cart is emptied after the checkout process has completed.
+- Test payment option fields during the checkout process.  E.g. Compulsory fields and valid credit card numbers.
+- Check the login functionality.
+- Does this site work on a mobile device.  This can be emulated with selenium driver settings.
 
+
+**1. What approaches could you used to reduce overall execution time?**
+- Run the tests in headless mode to reduce execution time.
+- Break the tests into multiple testpacks and run them in parallel on separate machines (e.g. separate VM's in a cloud service provider such as AWS or Azure).
+- If business logic is performed in the application backend, could we change some of these tests to be API tests rather than browser based.  Or change to back end tests entirely for this business logic.
+
+**3. How will your framework cater for this?**
+
+**4. Describe when to use a BDD approach to automation and when NOT to use BDD**
 
 
 
