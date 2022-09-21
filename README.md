@@ -1,6 +1,6 @@
 # JupiterToys
 
-This repository is a small testing framwork and test class for the Juniper Toys website.
+This repository is a small testing framework and test class for the Juniper Toys website.
 The tests are contained within TC_Planit.rb and utilise page objects and a support module.
 The tests will run against both of the following application URL's.
 
