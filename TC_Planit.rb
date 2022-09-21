@@ -5,7 +5,7 @@ require '.\Shop'
 require '.\Cart'
 
 class TC_Planit < Minitest::Test
-
+    
   def setup
     standard_setup
   end
@@ -13,7 +13,6 @@ class TC_Planit < Minitest::Test
   def teardown
     standard_teardown
   end
-
 
   def test_01_contact_page_error_validation
     contact = Contact.new

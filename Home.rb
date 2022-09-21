@@ -8,6 +8,4 @@ class Home
         Browser.goto_page('Home')
     end
 
-
-
 end

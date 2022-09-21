@@ -149,7 +149,6 @@ module Browser
         end
     end
 
-
 end
 
 
@@ -190,8 +189,3 @@ module Selenium
       end
     end
 end
-
-
-
-
-

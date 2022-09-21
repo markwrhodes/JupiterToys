@@ -42,5 +42,4 @@ class Shop
         end
     end
 
-
 end

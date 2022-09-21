@@ -43,7 +43,6 @@ class Cart
         return 0
     end
 
-
     def get_item_price(item_title_to_find)
         cart_table = get_cart_table
 
@@ -92,6 +91,5 @@ class Cart
     def currency_string_to_float(price)
         price.to_s.gsub(/[$,]/,'').to_f
     end
-       
 
 end
