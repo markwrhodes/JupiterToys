@@ -93,9 +93,14 @@ TC_Planit.rb -nt -n /test_01/
 - The framework could be extended to include the [restclient](https://rubygems.org/gems/restclient) gem to allow simple development of API tests.
 
 **4. Describe when to use a BDD approach to automation and when NOT to use BDD**
+Behaviour-Driven Development is a set of practices that aims to reduce some common wasteful activities in software development such as:
 
+- Rework caused by misunderstood or vague requirements
+- Technical debt caused by reluctance to refactor code
+- Slow feedback cycles caused by silos and hand-overs
 
+As stated by the Cucumber documentation, “BDD aims to narrow the communication gaps between team members, foster better understanding of the customer and promote continuous communication with real world examples”.
 
+What is common in the tech industry is to spend a small amount of time learning a topic such as BDD and skipping the important documentation and recommendations.  As a result we create Frankenstein concepts such as scrummerfall (Scrum combined with Waterfall).  The biggest issue with BDD automation is that many do not follow the principles and ideas of BDD.  Instead, we simple hear a buzzword, BDD, build it, and hope it solves our problems.
 
-
-
+BDD is not a testing tool, it is a process to follow that involves many roles on the software team.  The first criteria to consider when thinking about adopting BDD is to consider if the organization is willing to adopt it across all roles.  For example, who is creating the actual BDD spec files.  Is it the three amigos (Dev, Test, BA) sitting down together, talking, collaborating and leaving with a common language around the system requirements? If we can adopt BDD processes widely then it may be suitable to use a BDD approach, otherwise not.
